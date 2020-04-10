@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, ICT DevOps!
+- script: echo Hello,ICT DevOps!
   displayName: 'Run a one-line script'
 
 - script: |
