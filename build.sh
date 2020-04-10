@@ -1,10 +1,10 @@
 #! /bin/bash
 
 # Echo this is the build script
-echo "Building a webpage..."
+echo "Running the build script..."
 
-# Declare and initialize values
-SERVER_NAME=$HOSTNAME
+echo " I am $HOSTNAME."
+echo "The time is $(date '%s')."
+echo "The logged user is: $(USER)."
+echo "CURRENT WORKING DIERCTORY IS: $(PWD) ."
 
-# Replace values in index.html
-## TODO: Replace {SEVER_NAME} with $SEVER_NAME
