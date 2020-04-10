@@ -13,6 +13,6 @@ steps:
 - script: echo Hello,ICT DevOps!
   displayName: 'say hello!..'
 
-- script:
+- script: ./bash.sh
    
   displayName: 'Run build.sh script'
