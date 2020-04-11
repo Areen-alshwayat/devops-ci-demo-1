@@ -10,9 +10,21 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
+#SAY HELLO TO EVERYONE..!
 - script: echo Hello,ICT DevOps!
   displayName: 'say hello!..'
 
+#start the build  process
 - script: bash build.sh
-   
   displayName: 'Run build.sh script'
+
+#start the deployment process
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'SAREEN@52.168.149.214'
+    contents: '**'
+    targetFolder: '/var/www/html'
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+    failOnEmptySource: true
