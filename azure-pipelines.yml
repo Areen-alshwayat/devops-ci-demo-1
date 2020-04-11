@@ -37,7 +37,7 @@ steps:
       # Write your commands here
       
       echo 'Hello world'
-      echo  $(HOSTNAME)
+      echo  'I AM $HOSTNAME'
     failOnStderr: true
 
 
