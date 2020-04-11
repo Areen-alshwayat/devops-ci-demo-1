@@ -30,9 +30,9 @@ steps:
     readyTimeout: '20000'
     failOnEmptySource: true
 
-    -  task: Bash@3
-     inputs:
-      filePath:'build.sh'
-      failOnStderr:true
+-  task: Bash@3
+   inputs:
+    filePath:'build.sh'
+    failOnStderr:true
 
 
