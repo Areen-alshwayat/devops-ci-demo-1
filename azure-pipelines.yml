@@ -23,6 +23,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'SAREEN@52.168.149.214'
+    sourceFolder: 'web/'
     contents: '**'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
