@@ -32,7 +32,12 @@ steps:
 
 - task: Bash@3
   inputs:
-    filePath: 'build.sh'
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
+      echo  $(HOSTNAME)
     failOnStderr: true
 
 
