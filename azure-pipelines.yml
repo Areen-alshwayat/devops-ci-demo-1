@@ -31,11 +31,4 @@ steps:
     failOnEmptySource: true
 
 
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'SAREEN@52.168.149.214'
-    contents: '**'
-    targetFolder: 'build.sh'
-    readyTimeout: '20000'
-    failOnEmptySource: true
 
