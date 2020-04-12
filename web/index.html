@@ -9,14 +9,20 @@
   <body>
     <body style="background-color:powderblue;">
     <h1>Hello, HTU!</h1>
-<div style="background-image: url('185659.jpg');">
-    <h2 style="background-color:DodgerBlue;">I am the SAREEN.</h2>
-    
+      <style>
+body {
+  background-image: url('image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+    <h2 style="background-color:DodgerBlue;">I am the SAREEN.</h2>  
     <h2>Some details about who I am:</h2>
     <p>I was built on {SERVER_NAME} at {TIMESTAMP} by {USER}.</p>
     <p>I was built from {GIT_REPO} on branch {GIT_BRANCH}.</p>
     <p>I was built in {PWD}.</p>
     <p>I was also passed the value: {AZURE_VARIABLE} from the Azure Pipeline.</p>
-      </div>
+    
   </body>
 </html>
