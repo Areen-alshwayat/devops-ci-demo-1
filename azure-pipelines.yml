@@ -22,7 +22,7 @@ steps:
 #start the deployment process
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'SAREEN@52.168.149.214'
+    sshEndpoint: 'SAREEN@13.82.19.89'
     sourceFolder: 'web/'
     contents: '**'
     targetFolder: '/var/www/html'
