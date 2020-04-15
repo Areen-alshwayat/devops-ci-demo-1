@@ -12,7 +12,7 @@ server=$HOSTNAME
 name=$USER
 timestamp=$( date +%T )
 dir=$(PWD)
-branch=$(git branch -r |grep branch|sed -r 's|(^.*/)(.*)|\2|')
+branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 
 sed -i "s/{TIMESTAMP}/$timestamp/g" index.html
