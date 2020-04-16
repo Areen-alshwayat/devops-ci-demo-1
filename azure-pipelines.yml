@@ -9,22 +9,20 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
-
-#SAY HELLO TO EVERYONE..!
-- script: echo Hello,ICT DevOps!
-  displayName: 'say hello!..'
 
 
-  #variables:
-  AZURE-VARIABLE: AREEN
-  GIT-BRANCH: $(Build.sourceBranchName)
-  GIT-REPO: $(Build.Repository.Name)
+#VARIABLE
+ variables:
+
+   AZURE-VARIABLE: "AREEN"
+   GIT_BRANCH: $(Build.sourceBranchName)
+   GIT_REPO: $(Build.Repository.Name)
+
+ 
    
+#START BUILD
 
-
-#start the build  process
-- script: bash build.sh
+- script: bash build.sh $AZURE_VARIABLE $GIT_BRANCH $ GIT_REPO
   displayName: 'Run build.sh script'
 
 #start the deployment process
