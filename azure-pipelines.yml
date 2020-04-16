@@ -11,18 +11,22 @@ pool:
 
 
 
-#VARIABLE
- variables:
+#varibales
+  variables:
+    AZURE_VARIABLE: "AREEN"
+    GIT_BRANCH: $(Build.sourceBranchName)
+    GIT_REPO: $(Build.Repository.Name)
 
-   AZURE-VARIABLE: "AREEN"
-   GIT_BRANCH: $(Build.sourceBranchName)
-   GIT_REPO: $(Build.Repository.Name)
+steps:
 
- 
-   
-#START BUILD
+#SAY HELLO TO EVERYONE..!
+- script: echo Hello,ICT DevOps!
+  displayName: 'say hello!..'
 
-- script: bash build.sh $AZURE_VARIABLE $GIT_BRANCH $ GIT_REPO
+
+
+#start the build  process
+- script: bash build.sh 
   displayName: 'Run build.sh script'
 
 #start the deployment process
