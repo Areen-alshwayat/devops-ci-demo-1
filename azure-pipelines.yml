@@ -15,6 +15,14 @@ steps:
 - script: echo Hello,ICT DevOps!
   displayName: 'say hello!..'
 
+
+  #variables:
+  AZURE-VARIABLE: AREEN
+  GIT-BRANCH: $(Build.sourceBranchName)
+  GIT-REPO: $(Build.Repository.Name)
+   
+
+
 #start the build  process
 - script: bash build.sh
   displayName: 'Run build.sh script'
