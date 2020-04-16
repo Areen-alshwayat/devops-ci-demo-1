@@ -2,9 +2,7 @@
 
 # Echo this is the build script
 
-sed -i "s?{GIT_BRANCH}?$branch?g" 'index.txt'
-sed -i "s?{GIT_REPO}?$GIT_REPO?g" 'index.txt'
 
-
+envsubst '$GIT_REPO $GIT_BRANCH $AZURE_VARIABLE' <  web/index.html
 
 
