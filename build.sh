@@ -20,6 +20,6 @@ sed -i "s/{SERVER_NAME}/$server/g"  index.html
 sed -i "s/{AZURE_VARIABLE}/$AZURE_VARIABLE/g" index.txt
 
 
-sed  "s~{PWD}~$dir~g" >web/index.html
 
+sed  "s~{PWD}~$DIR~g" indx-1.txt>web/index.html
 
