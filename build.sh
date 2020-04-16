@@ -2,12 +2,8 @@
 
 # Echo this is the build script
 
-
-export TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
-sed -i "s/{/\${/g" web/index.html
-envsubst '$GIT_REPO $GIT_BRANCH $AZURE_VARIABLE > web/newIndex.html <  web/index.html
-cp web/newIndex.html web/index.html
- 
+sed -i "s?{GIT_BRANCH}?$branch?g" index.txt
+sed -i "s?{GIT_REPO}?$GIT_REPO?g" index.txt
 
 
 
