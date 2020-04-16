@@ -11,7 +11,7 @@ echo "CURRENT WORKING DIERCTORY IS: ${PWD} ."
 server=$HOSTNAME
 name=$USER
 timestamp=$( date +%T )
-dir=$(PWD)
+dir=$(pwd)
 branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 sed  "s/{SERVER_NAME}/$server/g" web/index.txt  |sed  "s/{USER}/$name/g" >index.txt
