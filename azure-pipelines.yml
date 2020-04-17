@@ -37,7 +37,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'SAREEN@52.170.5.141'
-    sourceFolder: 'hello_app'
+    sourceFolder: '/hello_app'
     contents: '**'
     targetFolder: 'views.py'
     readyTimeout: '20000'
