@@ -11,12 +11,6 @@ pool:
 
 
 
-#varibales
-  variables:
-    AZURE_VARIABLE: "AREEN"
-    GIT_BRANCH: $(Build.sourceBranchName)
-    GIT_REPO: $(Build.Repository.Name)
-
 steps:
 
 #SAY HELLO TO EVERYONE..!
