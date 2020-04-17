@@ -26,7 +26,7 @@ steps:
 
 
 #start the build  process
-- script: bash build.sh $AZURE_VARIABLE $GIT_BRANCH $GIT_REPO
+- script: bash build.sh $AZURE_VARIABLE 
   displayName: 'Run build.sh script'
 
 #start the deployment process
