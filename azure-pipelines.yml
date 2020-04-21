@@ -26,7 +26,7 @@ steps:
 #start the deployment process
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'areenweb@40.87.8.185'
+    sshEndpoint: 'SAREEN@52.170.5.141'
     sourceFolder: 'web/'
     contents: '**'
     targetFolder: '/var/www/html'
